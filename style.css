@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('assets/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-content {
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+}
+
+.hero-content span {
+    color: #00aaff;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #00aaff;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* SECTIONS */
+.section-title {
+    text-align: center;
+    margin: 60px 0 20px;
+    font-size: 32px;
+}
+
+/* ABOUT */
+.about-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+.about-container img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* SKILLS */
+.skills .bar {
+    width: 60%;
+    margin: 10px auto;
+}
+
+.progress {
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.progress div {
+    height: 100%;
+    background: #00aaff;
+    border-radius: 5px;
+}
+
+/* PROJECTS */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+footer {
+    background: #111;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        padding: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact form {
+        width: 80%;
+    }
+}

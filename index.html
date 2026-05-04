@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">MyPortfolio</h1>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" id="menuBtn">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm <span>Bhumika Gaba</span></h2>
+            <p>A Frontend Developer & UI/UX Designer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <img src="assets/profile.jpg" alt="Profile">
+            <div class="about-text">
+                <p>
+                    I am a passionate frontend developer who loves creating beautiful and functional interfaces.
+                    I specialize in building responsive, interactive websites using modern web technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-bars">
+            <div class="bar">
+                <span>HTML</span>
+                <div class="progress"><div style="width: 90%"></div></div>
+            </div>
+            <div class="bar">
+                <span>CSS</span>
+                <div class="progress"><div style="width: 85%"></div></div>
+            </div>
+            <div class="bar">
+                <span>JavaScript</span>
+                <div class="progress"><div style="width: 75%"></div></div>
+            </div>
+            <div class="bar">
+                <span>React</span>
+                <div class="progress"><div style="width: 70%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/project1.jpg">
+                <h3>Project One</h3>
+                <p>Fully responsive website built using HTML, CSS, JS.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/project2.jpg">
+                <h3>Project Two</h3>
+                <p>Interactive UI project built with React.js.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/project3.jpg">
+                <h3>Project Three</h3>
+                <p>Modern landing page with animations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="status"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Name | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
